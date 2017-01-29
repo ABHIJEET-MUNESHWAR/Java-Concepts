@@ -1,4 +1,4 @@
-package com.javaconcepts.thread.nosync;
+package com.javaconcepts.thread.synchronization.nosync;
 
 /**
  * Created using IntelliJ IDEA.

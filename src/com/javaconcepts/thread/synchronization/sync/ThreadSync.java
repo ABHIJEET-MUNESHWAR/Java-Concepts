@@ -1,4 +1,4 @@
-package com.javaconcepts.thread.sync;
+package com.javaconcepts.thread.synchronization.sync;
 
 /**
  * Created using IntelliJ IDEA.
