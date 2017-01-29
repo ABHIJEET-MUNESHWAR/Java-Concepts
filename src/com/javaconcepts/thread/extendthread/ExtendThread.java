@@ -1,4 +1,4 @@
-package com.javaconcepts.extendthread;
+package com.javaconcepts.thread.extendthread;
 
 /**
  * Created using IntelliJ IDEA.

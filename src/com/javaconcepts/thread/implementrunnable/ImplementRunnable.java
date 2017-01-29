@@ -1,4 +1,4 @@
-package com.javaconcepts.implementrunnable;
+package com.javaconcepts.thread.implementrunnable;
 
 /**
  * Created using IntelliJ IDEA.

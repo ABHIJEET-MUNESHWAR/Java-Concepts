@@ -1,11 +1,12 @@
-package com.javaconcepts.nosync;
+package com.javaconcepts.thread.sync;
 
 /**
  * Created using IntelliJ IDEA.
  * User: abhijeet
  * Date: 29/01/17
- * Time: 5:18 PM
+ * Time: 5:27 PM
  */
+
 class PrintDemo {
     public void printCount() {
         try {
@@ -39,17 +40,19 @@ class ThreadDemo extends Thread {
 
     public void run() {
         System.out.println("Running thread: " + threadName);
-        pd.printCount();
+        synchronized (pd) {
+            pd.printCount();
+        }
         System.out.println("Exiting thread: " + threadName);
     }
 }
 
-public class ThreadNoSync {
+public class ThreadSync {
     public static void main(String[] args) {
         PrintDemo pd = new PrintDemo();
         ThreadDemo t1 = new ThreadDemo("Thread 1", pd);
-        t1.start();
         ThreadDemo t2 = new ThreadDemo("Thread 2", pd);
+        t1.start();
         t2.start();
         try{
             t1.join();
