@@ -1,7 +1,7 @@
 package com.javaconcepts.rmi.client;
 
 
-import java.rmi;
+import java.rmi.*;
 
 /**
  * Created using IntelliJ IDEA.
@@ -12,8 +12,8 @@ import java.rmi;
 public class Client {
     public static void main(String[] args) {
         try{
-            AddServerInterface st = (AddServerInterface) Naming.lookup("rmi://"+args[0]+"/AddService");
-            System.out.println(st.sum(2, 3));
+            //AddServerInterface st = (AddServerInterface) Naming.lookup("rmi://"+args[0]+"/AddService");
+            //System.out.println(st.sum(2, 3));
         } catch(Exception e) {
             e.printStackTrace();
         }
