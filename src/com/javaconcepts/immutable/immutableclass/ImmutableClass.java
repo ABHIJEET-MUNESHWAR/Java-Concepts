@@ -7,6 +7,11 @@ package com.javaconcepts.immutable.immutableclass;
  * Time: 9:40 PM
  */
 public final class ImmutableClass {
+
+    private final int n;
+    private final String name;
+    private boolean isIt;
+
     public int getN() {
         return n;
     }
@@ -19,9 +24,6 @@ public final class ImmutableClass {
         return isIt;
     }
 
-    private final int n;
-    private final String name;
-    private boolean isIt;
     ImmutableClass(int num, String str, boolean bool) {
         n = num;
         name = str;
