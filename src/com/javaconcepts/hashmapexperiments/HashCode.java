@@ -1,4 +1,4 @@
-package com.javaconcepts.hashcode;
+package com.javaconcepts.hashmapexperiments;
 
 import java.util.HashSet;
 
@@ -17,8 +17,8 @@ public class HashCode {
     public static void main(String[] args) {
         HashSet<Integer> hashSet = new HashSet<>();
         hashSet.add(1);
-        hashSet.add(1);
-        hashSet.add(1);
-        System.out.println(hashSet.size());
+        hashSet.add(2);
+        hashSet.add(3);
+        System.out.println(hashSet);
     }
 }

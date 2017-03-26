@@ -1,4 +1,4 @@
-package com.javaconcepts.hashmap;
+package com.javaconcepts.customhashmap;
 
 /**
  * Created using IntelliJ IDEA.
