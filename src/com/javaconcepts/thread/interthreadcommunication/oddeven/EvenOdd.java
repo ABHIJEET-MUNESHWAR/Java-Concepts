@@ -61,7 +61,7 @@ class Thread2 implements Runnable {
 
     Thread2(Numbers numbers) {
         this.numbers = numbers;
-        t = new Thread(this, "Odd");
+        t = new Thread(this, "Even");
         t.start();
     }
 
